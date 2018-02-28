@@ -776,9 +776,10 @@ GameObject:
   - component: {fileID: 114535380844920448}
   - component: {fileID: 114564825157025474}
   - component: {fileID: 208265072492060474}
+  - component: {fileID: 114864078170391568}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2542,9 +2543,20 @@ MonoBehaviour:
   m_JumpPower: 6
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 1
+  m_MoveSpeedMultiplier: 1.05
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.3
+--- !u!114 &114864078170391568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576457643859380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4042e57fb9e7c2b4d86df21ac4bba559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136974019976551058
 CapsuleCollider:
   m_ObjectHideFlags: 1
