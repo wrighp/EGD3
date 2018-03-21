@@ -22,7 +22,38 @@ public class Leader : MonoBehaviour {
         {
             DropLine();
         }
-	}
+
+        bool notHug = true;
+        if (Input.GetButton("RightBumper")) {
+            if (Input.GetButtonDown("LeftBumper")) {
+
+                print("Hug");
+                notHug = false;
+
+                performHug();
+            }
+        }
+        if (Input.GetButton("LeftBumper") && notHug) {
+            if (Input.GetButtonDown("RightBumper")) {
+
+                print("Hug");
+                performHug();
+            }
+        }
+
+    }
+
+    private void performHug() {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position + new Vector3(0, .5f, 1.5f), 1.5f);
+        int i = 0;
+        while (i < hitColliders.Length) {
+            Follower f = hitColliders[i].gameObject.GetComponent<Follower>();
+            if (f != null) {
+                f.AttemptFollow(gameObject);
+            }
+            i++;
+        }
+    }
 
     private void DropLastFollower()
     {

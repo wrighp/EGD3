@@ -21,18 +21,35 @@ public class Follower : MonoBehaviour
     {
 
     }
-    void OnCollisionEnter(Collision collision)
-    {
-        if(!following && collision.gameObject.name == "Player")
-        {
-            Leader leader = collision.gameObject.GetComponent<Leader>();
+    //void OnCollisionEnter(Collision collision)
+    //{
+    //    if(!following && collision.gameObject.name == "Player")
+    //    {
+    //        Leader leader = collision.gameObject.GetComponent<Leader>();
+    //        Transform targ;
+    //        if (leader.line.Count == 0)
+    //        {
+    //            targ = leader.transform;
+    //        }
+    //        else
+    //        {
+    //            targ = leader.line.Last.Value.transform;
+    //        }
+    //        target.target = targ;
+    //        leader.line.AddLast(this);
+    //        following = true;
+
+    //        CreateFriend.i.AttemptFriend(gameObject, new List<GameObject>());
+    //    }
+    //}
+
+    public void AttemptFollow(GameObject player) {
+        if (!following) {
+            Leader leader = player.GetComponent<Leader>();
             Transform targ;
-            if (leader.line.Count == 0)
-            {
+            if (leader.line.Count == 0) {
                 targ = leader.transform;
-            }
-            else
-            {
+            } else {
                 targ = leader.line.Last.Value.transform;
             }
             target.target = targ;
@@ -42,4 +59,5 @@ public class Follower : MonoBehaviour
             CreateFriend.i.AttemptFriend(gameObject, new List<GameObject>());
         }
     }
+
 }
