@@ -6,13 +6,13 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Fur20
-  m_Shader: {fileID: 4800000, guid: 2babea13c4103e54d807ece8434537ab, type: 3}
+  m_Name: Fur10
+  m_Shader: {fileID: 4800000, guid: 6abc68d68cb12f545992a84099caf236, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3200
+  m_CustomRenderQueue: 2999
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -22,10 +22,6 @@ Material:
         m_Texture: {fileID: 2800000, guid: 4b2cabe18ed6c0641a074f94d745010c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f1ce69d01333be440be9041a903efeca, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _NoiseTex:
         m_Texture: {fileID: 2800000, guid: 2944015f659833549b880200995064b5, type: 3}
         m_Scale: {x: 20, y: 20}
@@ -33,14 +29,9 @@ Material:
     m_Floats:
     - _Cutoff: 0
     - _EdgeFade: 0.25
-    - _FurDarkening: 0.03
     - _FurLength: 0.25
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ForceDirection: {r: 0, g: 0, b: 0, a: 0}
     - _Gravity: {r: 0, g: 0, b: 0, a: 0}
     - _LightDirection0: {r: 1, g: 1, b: 0, a: 1}
     - _MyLightColor0: {r: 0, g: 1, b: 0, a: 1}
---- !u!1002 &2100001
-EditorExtensionImpl:
-  serializedVersion: 6
