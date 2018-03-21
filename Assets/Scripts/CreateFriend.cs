@@ -7,8 +7,11 @@ public class CreateFriend : MonoBehaviour {
     public static CreateFriend i = null;
     public GameObject heart;
 
-	// Use this for initialization
-	void Start () {
+    public AudioClip sound;
+    AudioSource audioSource;
+
+    // Use this for initialization
+    void Start () {
         if (i == null) i = this;
 	}
 
@@ -48,6 +51,9 @@ public class CreateFriend : MonoBehaviour {
         target.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
         Instantiate(heart, target.transform);
 
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(sound, 0.7F);
+        audioSource.time = .8f;
         return true;
     }
 }

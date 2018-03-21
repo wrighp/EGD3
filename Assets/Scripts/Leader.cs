@@ -44,7 +44,7 @@ public class Leader : MonoBehaviour {
     }
 
     private void performHug() {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position + new Vector3(0, .5f, 1.5f), 1.5f);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position + new Vector3(0, .5f, 1.5f), 3f);
         int i = 0;
         while (i < hitColliders.Length) {
             Follower f = hitColliders[i].gameObject.GetComponent<Follower>();
@@ -75,4 +75,11 @@ public class Leader : MonoBehaviour {
             DropLastFollower();
         }
     }
+
+    //public class ExampleClass : MonoBehaviour {
+    //    void OnDrawGizmosSelected() {
+    //        Gizmos.color = Color.red;
+    //        Gizmos.DrawWireSphere(transform.position + new Vector3(0, .5f, 5f), 5f);
+    //    }
+    //}
 }
