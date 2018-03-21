@@ -8,7 +8,7 @@ public class Follower : MonoBehaviour
 {
 
     public bool following = false;
-    AICharacterControl target;
+    public AICharacterControl target;
 
     // Use this for initialization
     void Start()
