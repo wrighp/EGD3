@@ -5,6 +5,7 @@ using UnityEngine;
 public class CreateFriend : MonoBehaviour {
 
     public static CreateFriend i = null;
+    public GameObject heart;
 
 	// Use this for initialization
 	void Start () {
@@ -12,38 +13,40 @@ public class CreateFriend : MonoBehaviour {
 	}
 
     public bool AttemptFriend(GameObject target, List<GameObject> friendLine ) {
-        List<Requirement> reqs = target.GetComponent<ObjectTags>().freindRequirements;
+        //List<Requirement> reqs = target.GetComponent<ObjectTags>().freindRequirements;
 
-        //Prepare the checks by resetting the requirements
-        foreach (Requirement r in reqs) {
-            r.remaining = r.quantity;
-        }
+        ////Prepare the checks by resetting the requirements
+        //foreach (Requirement r in reqs) {
+        //    r.remaining = r.quantity;
+        //}
 
-        foreach (GameObject g in friendLine) {
-            List<Tags> tags = g.GetComponent<ObjectTags>().tags;
+        //foreach (GameObject g in friendLine) {
+        //    List<Tags> tags = g.GetComponent<ObjectTags>().tags;
 
-            bool matchFound = false;
+        //    bool matchFound = false;
 
-            foreach(Tags t in tags) {
-                foreach(Requirement r in reqs) {
-                    if (t == r.requirement) {
-                        matchFound = true;
-                        r.remaining--;
-                    }
-                }
-            }
+        //    foreach(Tags t in tags) {
+        //        foreach(Requirement r in reqs) {
+        //            if (t == r.requirement) {
+        //                matchFound = true;
+        //                r.remaining--;
+        //            }
+        //        }
+        //    }
 
-            if (!matchFound) {
-                //No match was found, invalid Friend in the conga line
-                break;
-            }
-        }
+        //    if (!matchFound) {
+        //        //No match was found, invalid Friend in the conga line
+        //        break;
+        //    }
+        //}
 
-        foreach (Requirement r in reqs) {
-            if (r.remaining != 0) return false; 
-        }
+        //foreach (Requirement r in reqs) {
+        //    if (r.remaining != 0) return false; 
+        //}
 
         //ANIMATE FREIND
+        target.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+        Instantiate(heart, target.transform);
 
         return true;
     }

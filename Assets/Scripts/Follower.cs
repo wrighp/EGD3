@@ -38,6 +38,8 @@ public class Follower : MonoBehaviour
             target.target = targ;
             leader.line.AddLast(this);
             following = true;
+
+            CreateFriend.i.AttemptFriend(gameObject, new List<GameObject>());
         }
     }
 }
