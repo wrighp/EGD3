@@ -18,6 +18,10 @@ public class Leader : MonoBehaviour {
         {
             DropLastFollower();
         }
+        if (Input.GetButtonDown("DropLine"))
+        {
+            DropLine();
+        }
 	}
 
     private void DropLastFollower()
@@ -31,5 +35,13 @@ public class Leader : MonoBehaviour {
         last.following = false;
         last.target.target = null;
         line.RemoveLast();
+    }
+
+    private void DropLine()
+    {
+        while(line.Count > 0)
+        {
+            DropLastFollower();
+        }
     }
 }
