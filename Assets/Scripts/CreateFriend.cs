@@ -53,13 +53,13 @@ public class CreateFriend : MonoBehaviour {
         //ANIMATE FREIND
         Instantiate(pS, target.transform.position, Quaternion.identity);
         t = target;
-        Invoke("InvokeSpawn", 1f);
+        Invoke("InvokeSpawn", .75f);
 
         return true;
     }
 
     public void InvokeSpawn() {
-        Instantiate(heart, t.transform.position, Quaternion.identity);
+        
 
         t.transform.GetChild(0).gameObject.SetActive(true);
         t.transform.GetChild(1).gameObject.SetActive(false);
@@ -67,8 +67,13 @@ public class CreateFriend : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(sound, 0.7F);
         audioSource.time = .8f;
+
         t.GetComponent<UnitData>().alive = true;
         t.GetComponent<Follower>().AttemptFollow(gameObject);
+
+        GameObject h = Instantiate(heart, t.transform);
+        h.GetComponent<HeartMove>().parent = t.transform;
+
 
         t = null;
     }

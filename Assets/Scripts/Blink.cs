@@ -23,7 +23,7 @@ public class Blink : MonoBehaviour {
         eyeMaxSize[0] = new Vector3(eyes[0].localScale.x, eyes[0].localScale.y,eyes[0].localScale.z);
         eyeMaxSize[1] = new Vector3(eyes[1].localScale.x, eyes[1].localScale.y, eyes[1].localScale.z);
 
-        eyeBlinkSpeed = Random.Range(1, 4)/3f;
+        eyeBlinkSpeed = Random.Range(1, 3)/5f;
         eyeBlinkTime = Random.Range(5, 14);
 
         currentTime = 0;
@@ -42,14 +42,12 @@ public class Blink : MonoBehaviour {
             }
 
             if (eyeBlinkCurrent >= eyeBlinkSpeed && eyeDirection == 1) {
-                print("1");
                 eyeBlinkCurrent = eyeBlinkSpeed;
                 eyeDirection = -1;
             }
 
             if (eyeBlinkCurrent == 0 && eyeDirection == -1) {
-                print("2");
-                eyeBlinkSpeed = Random.Range(1, 4) / 3f;
+                eyeBlinkSpeed = Random.Range(1, 3) / 5f;
                 eyeBlinkTime = Random.Range(5, 14);
 
                 currentTime = 0;
