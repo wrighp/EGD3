@@ -16,7 +16,7 @@ public class CreateFriend : MonoBehaviour {
         if (i == null) i = this;
 	}
 
-    private GameObject t;
+    Queue<GameObject> spawnQueue = new Queue<GameObject>();
 
     public bool AttemptFriend(GameObject target, List<GameObject> friendLine ) {
         //List<Requirement> reqs = target.GetComponent<ObjectTags>().freindRequirements;
@@ -52,14 +52,14 @@ public class CreateFriend : MonoBehaviour {
 
         //ANIMATE FREIND
         Instantiate(pS, target.transform.position, Quaternion.identity);
-        t = target;
+        spawnQueue.Enqueue(target);
         Invoke("InvokeSpawn", .75f);
 
         return true;
     }
 
     public void InvokeSpawn() {
-        
+        GameObject t = spawnQueue.Dequeue();
 
         t.transform.GetChild(0).gameObject.SetActive(true);
         t.transform.GetChild(1).gameObject.SetActive(false);
