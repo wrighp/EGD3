@@ -47,11 +47,15 @@ public class Blink : MonoBehaviour {
             }
 
             if (eyeBlinkCurrent == 0 && eyeDirection == -1) {
-                eyeBlinkSpeed = Random.Range(1, 3) / 5f;
-                eyeBlinkTime = Random.Range(5, 14);
-
-                currentTime = 0;
-                eyeBlinkCurrent = 0;
+                if (Random.Range(0, 10) < 1) {
+                    eyeBlinkSpeed = Random.Range(1, 3) / 5f;
+                    eyeBlinkCurrent = 0;
+                } else {
+                    eyeBlinkSpeed = Random.Range(1, 3) / 5f;
+                    eyeBlinkTime = Random.Range(5, 14);
+                    currentTime = 0;
+                    eyeBlinkCurrent = 0;
+                }
 
                 eyeDirection = 1;
             }
