@@ -21,7 +21,9 @@ GameObject:
   - component: {fileID: 4932783131256452}
   - component: {fileID: 33182460247036476}
   - component: {fileID: 23266220600735824}
-  - component: {fileID: 95817039361730840}
+  - component: {fileID: 136655307202103288}
+  - component: {fileID: 114661627930321954}
+  - component: {fileID: 114892278308344266}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1444148910745202}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.48132825, y: 0.51095325, z: -0.0272789}
+  m_LocalPosition: {x: -3.1609993, y: 0.45797285, z: -7.094751}
   m_LocalScale: {x: 9.871583, y: 9.871589, z: 9.871589}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,20 +87,42 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1444148910745202}
   m_Mesh: {fileID: 4300000, guid: 9a7abf7e96f17a64ea531e13604caf5c, type: 3}
---- !u!95 &95817039361730840
-Animator:
-  serializedVersion: 3
+--- !u!114 &114661627930321954
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1444148910745202}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 9a7abf7e96f17a64ea531e13604caf5c, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  following: 0
+  target: {fileID: 0}
+--- !u!114 &114892278308344266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444148910745202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8882b3a5991441a46909c839d4159d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ot: {fileID: 11400000, guid: a7efa59f696d82b4bb5e0cd53b18f394, type: 2}
+  alive: 0
+--- !u!136 &136655307202103288
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444148910745202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.042484988
+  m_Height: 0.093443856
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.00032907698, z: 0}

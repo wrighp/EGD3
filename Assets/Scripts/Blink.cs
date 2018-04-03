@@ -38,7 +38,7 @@ public class Blink : MonoBehaviour {
             eyeBlinkCurrent = Mathf.Clamp(eyeBlinkCurrent, 0, eyeBlinkSpeed);
 
             for (int i = 0; i < 2; i++) {
-                eyes[i].localScale = new Vector3(eyeMaxSize[i].x, eyeMaxSize[i].y * (1 - (eyeBlinkCurrent / eyeBlinkSpeed)), eyeMaxSize[i].z);
+                eyes[i].localScale = new Vector3(eyeMaxSize[i].x, eyeMaxSize[i].y * (1.01f - (eyeBlinkCurrent / eyeBlinkSpeed)), eyeMaxSize[i].z);
             }
 
             if (eyeBlinkCurrent >= eyeBlinkSpeed && eyeDirection == 1) {

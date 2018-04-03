@@ -21,7 +21,9 @@ GameObject:
   - component: {fileID: 4874297618450546}
   - component: {fileID: 33269707937731630}
   - component: {fileID: 23172617795951668}
-  - component: {fileID: 95535916517190994}
+  - component: {fileID: 65275789956853218}
+  - component: {fileID: 114607371925580504}
+  - component: {fileID: 114588768280128194}
   m_Layer: 0
   m_Name: Mailbox
   m_TagString: Untagged
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535141331420052}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.5947113, y: 0.6261385, z: -0.23583055}
+  m_LocalPosition: {x: 11.893863, y: 0.57315814, z: -0.3552103}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,20 +86,41 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535141331420052}
   m_Mesh: {fileID: 4300000, guid: c4f9d8add6fcee5438b9bff0c8fba6d7, type: 3}
---- !u!95 &95535916517190994
-Animator:
-  serializedVersion: 3
+--- !u!65 &65275789956853218
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535141331420052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022482123, y: 0.038210545, z: 0.022022007}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114588768280128194
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535141331420052}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c4f9d8add6fcee5438b9bff0c8fba6d7, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8882b3a5991441a46909c839d4159d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ot: {fileID: 11400000, guid: 3bc49c33b3db2054ebf2457ad32dbe40, type: 2}
+  alive: 0
+--- !u!114 &114607371925580504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535141331420052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  following: 0
+  target: {fileID: 0}
