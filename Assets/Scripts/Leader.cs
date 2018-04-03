@@ -11,7 +11,9 @@ public class Leader : MonoBehaviour {
     void Start () {
 		
 	}
-	
+
+    bool triggerPressed = false;
+
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButtonDown("Drop"))
@@ -23,22 +25,29 @@ public class Leader : MonoBehaviour {
             DropLine();
         }
 
-        bool notHug = true;
-        if (Input.GetButton("RightBumper")) {
+        /*
+        if (Input.GetButtonDown("RightBumper")) {
             if (Input.GetButtonDown("LeftBumper")) {
 
                 print("Hug");
-                notHug = false;
 
                 performHug();
             }
         }
-        if (Input.GetButton("LeftBumper") && notHug) {
-            if (Input.GetButtonDown("RightBumper")) {
-
+        */
+        //If triggers are both pressed fire perform hug once
+        if (Input.GetAxis("RightBumper") > .25f && Input.GetAxis("LeftBumper") > .25f)
+        {
+            if (!triggerPressed)
+            {
                 print("Hug");
+                triggerPressed = true;
                 performHug();
             }
+        }
+        else
+        {
+            triggerPressed = false;
         }
 
     }

@@ -364,14 +364,30 @@ InputManager:
     negativeButton: 
     positiveButton: b
     altNegativeButton: 
-    altPositiveButton: joystick button 7
+    altPositiveButton: 
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
     snap: 0
     invert: 0
     type: 0
-    axis: 0
+    axis: 9
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: RightBumper
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: b
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.001
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 9
     joyNum: 1
   - serializedVersion: 3
     m_Name: LeftBumper
@@ -380,12 +396,28 @@ InputManager:
     negativeButton: 
     positiveButton: b
     altNegativeButton: 
-    altPositiveButton: joystick button 6
+    altPositiveButton: 
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
     snap: 0
     invert: 0
     type: 0
-    axis: 0
+    axis: 7
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: LeftBumper
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: b
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.001
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 8
     joyNum: 1
