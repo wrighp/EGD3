@@ -4,9 +4,8 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "NewObjectTags", menuName = "ScriptableObjects/ObjectTags", order = 1)]
 public class ObjectTags : ScriptableObject
 {
-    public GameObject liveForm;
     public List<Tags> tags = new List<Tags>();
-    public List<Requirement> freindRequirements = new List<Requirement>();
+    public List<Requirement> friendRequirements = new List<Requirement>();
 }
 
 [System.Serializable]

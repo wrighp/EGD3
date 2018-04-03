@@ -6,6 +6,7 @@ public class CreateFriend : MonoBehaviour {
 
     public static CreateFriend i = null;
     public GameObject heart;
+    public GameObject pS;
 
     public AudioClip sound;
     AudioSource audioSource;
@@ -14,6 +15,8 @@ public class CreateFriend : MonoBehaviour {
     void Start () {
         if (i == null) i = this;
 	}
+
+    private GameObject t;
 
     public bool AttemptFriend(GameObject target, List<GameObject> friendLine ) {
         //List<Requirement> reqs = target.GetComponent<ObjectTags>().freindRequirements;
@@ -48,12 +51,25 @@ public class CreateFriend : MonoBehaviour {
         //}
 
         //ANIMATE FREIND
-        target.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
-        Instantiate(heart, target.transform);
+        Instantiate(pS, target.transform.position, Quaternion.identity);
+        t = target;
+        Invoke("InvokeSpawn", 1f);
+
+        return true;
+    }
+
+    public void InvokeSpawn() {
+        Instantiate(heart, t.transform.position, Quaternion.identity);
+
+        t.transform.GetChild(0).gameObject.SetActive(true);
+        t.transform.GetChild(1).gameObject.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(sound, 0.7F);
         audioSource.time = .8f;
-        return true;
+        t.GetComponent<UnitData>().alive = true;
+        t.GetComponent<Follower>().AttemptFollow(gameObject);
+
+        t = null;
     }
 }
