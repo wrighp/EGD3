@@ -1194,7 +1194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1814610960236474}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.329, z: -0.10699996}
+  m_LocalPosition: {x: 0, y: 0.0039999485, z: -0.106999874}
   m_LocalScale: {x: 15.760184, y: 15.760171, z: 15.760171}
   m_Children: []
   m_Father: {fileID: 4816323328808004}
@@ -1333,8 +1333,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877102432008908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00188, y: 0.01851, z: -0.009}
-  m_LocalScale: {x: 0.6263627, y: 0.62636316, z: 0.62636316}
+  m_LocalPosition: {x: 0.0018801196, y: 0.028563153, z: -0.0019506958}
+  m_LocalScale: {x: 0.6263627, y: 0.6263633, z: 0.6263633}
   m_Children:
   - {fileID: 4652967716096704}
   - {fileID: 4977065567009922}
@@ -1445,7 +1445,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1864124307669888}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.044, y: 0.23999995, z: -0.2}
+  m_LocalPosition: {x: 0.044, y: -0.175, z: 0.091}
   m_LocalScale: {x: 41.280636, y: 41.280598, z: 41.280598}
   m_Children:
   - {fileID: 4203355023900670}
@@ -1897,8 +1897,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1495559668169766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.77, y: 0.015561476, z: 5.37}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 35.10242, y: 3, z: -5.345}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4752941808446976}
   - {fileID: 4043502116239372}
@@ -2357,7 +2357,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2756,13 +2756,13 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.34
-  m_Speed: 5.5
-  m_Acceleration: 15
+  m_Speed: 1
+  m_Acceleration: 10
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 4
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 1.04
   m_BaseOffset: 0
