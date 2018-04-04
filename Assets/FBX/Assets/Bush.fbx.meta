@@ -1,18 +1,17 @@
 fileFormatVersion: 2
-guid: b722c08992ace704cb051bb40ad3b182
-timeCreated: 1521610942
+guid: 3a7376ff532f11f41b5d00c4584e1368
+timeCreated: 1522810984
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
-    2100002: phong1
+    2100000: BushWood
+    2100002: BushLeaf
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube2
-    4300002: Pillow
+    4300000: Bush
     9500000: //RootNode
   externalObjects: {}
   materials:

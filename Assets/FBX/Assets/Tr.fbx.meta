@@ -9,9 +9,12 @@ ModelImporter:
     400000: //RootNode
     2100000: lambert3
     2100002: lambert2
+    2100004: yTreeLeaves
+    2100006: yTreeWood
     2300000: //RootNode
     3300000: //RootNode
     4300000: pSphere4
+    4300002: Tree
     9500000: //RootNode
   externalObjects: {}
   materials:

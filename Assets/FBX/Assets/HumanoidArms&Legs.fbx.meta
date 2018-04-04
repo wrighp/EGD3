@@ -142,6 +142,7 @@ ModelImporter:
     400132: LegL
     400134: LegR
     2100000: lambert2
+    2100002: FriendArmsLegs
     4300000: ArmL
     4300002: ArmR
     4300004: LegL

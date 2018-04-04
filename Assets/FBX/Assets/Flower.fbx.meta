@@ -10,9 +10,13 @@ ModelImporter:
     2100000: lambert2
     2100002: lambert4
     2100004: lambert3
+    2100006: FlowerStem
+    2100008: FlowerPetal
+    2100010: FlowerCenter
     2300000: //RootNode
     3300000: //RootNode
     4300000: pSphere1
+    4300002: Flower
     9500000: //RootNode
   externalObjects: {}
   materials:

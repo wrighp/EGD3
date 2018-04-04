@@ -1,18 +1,16 @@
 fileFormatVersion: 2
-guid: b722c08992ace704cb051bb40ad3b182
-timeCreated: 1521610942
+guid: 70688f50b18983342a0ade20ea49461f
+timeCreated: 1522810985
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
-    2100002: phong1
+    2100000: WaterCanPlastic
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube2
-    4300002: Pillow
+    4300000: Watercan
     9500000: //RootNode
   externalObjects: {}
   materials:
