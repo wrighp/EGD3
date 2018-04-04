@@ -44,7 +44,9 @@ public class Follower : MonoBehaviour
     //}
 
     public void AttemptFollow(GameObject player) {
-        if (!following) {
+        UnitData uD = GetComponent<UnitData>();
+
+        if (!following && uD.alive) {
             Leader leader = player.GetComponent<Leader>();
             Transform targ;
             if (leader.line.Count == 0) {
@@ -55,9 +57,12 @@ public class Follower : MonoBehaviour
             target.target = targ;
             leader.line.AddLast(this);
             following = true;
+        }
 
+        if (!uD.alive) {
             CreateFriend.i.AttemptFriend(gameObject, new List<GameObject>());
         }
+
     }
 
 }

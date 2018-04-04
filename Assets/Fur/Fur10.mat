@@ -24,14 +24,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NoiseTex:
         m_Texture: {fileID: 2800000, guid: 2944015f659833549b880200995064b5, type: 3}
-        m_Scale: {x: 3, y: 3}
+        m_Scale: {x: 20, y: 20}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cutoff: 0
     - _EdgeFade: 0.25
-    - _FurLength: 0.5
+    - _FurLength: 0.25
     m_Colors:
     - _ForceDirection: {r: 0, g: 0, b: 0, a: 0}
-    - _Gravity: {r: 0, g: 0, b: 0, a: 0}
+    - _Gravity: {r: 0, g: -0.1, b: 0, a: 0}
     - _LightDirection0: {r: 1, g: 1, b: 0, a: 1}
     - _MyLightColor0: {r: 0, g: 1, b: 0, a: 1}

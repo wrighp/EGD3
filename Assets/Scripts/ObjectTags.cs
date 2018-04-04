@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class ObjectTags : ScriptableObject
 {
     public List<Tags> tags = new List<Tags>();
-    public List<Requirement> freindRequirements = new List<Requirement>();
+    public List<Requirement> friendRequirements = new List<Requirement>();
 }
 
 [System.Serializable]
