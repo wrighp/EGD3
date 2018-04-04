@@ -8,7 +8,7 @@ using UnityStandardAssets.Characters.ThirdPerson;
 public class Leader : MonoBehaviour {
 
     public LinkedList<Follower> line = new LinkedList<Follower>();
-
+    public GameObject followObject;
     // Use this for initialization
     void Start () {
 		
@@ -63,7 +63,7 @@ public class Leader : MonoBehaviour {
             foreach(var follower in line)
             {
                 duration += jumpTimeDelay;
-                StartCoroutine(FollowerJumper(follower.GetComponent<Rigidbody>(), duration));
+                //StartCoroutine(FollowerJumper(follower.GetComponent<Rigidbody>(), duration));
             }
         }
 
@@ -84,10 +84,15 @@ public class Leader : MonoBehaviour {
         rigidbody.velocity = new Vector3(rigidbody.velocity.x, jumpForce, rigidbody.velocity.z);
         //rigidbody.AddForce(0, jumpForce, 0, jumpForceMode);
         agent.velocity = rigidbody.velocity;
-
+        rigidbody.isKinematic = false;
         //Or until grounded
         yield return new WaitForSeconds(.75f);
 
+        if (rigidbody == null)
+        {
+            yield break;
+        }
+        rigidbody.isKinematic = true;
         agent.updatePosition = true;
        // agent.isStopped = false;
     }
@@ -98,7 +103,7 @@ public class Leader : MonoBehaviour {
         while (i < hitColliders.Length) {
             Follower f = hitColliders[i].gameObject.GetComponent<Follower>();
             if (f != null) {
-                f.AttemptFollow(gameObject);
+                f.AttemptFollow(followObject);
             }
             i++;
         }

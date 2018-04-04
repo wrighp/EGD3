@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 190095835}
   - component: {fileID: 190095834}
   - component: {fileID: 190095843}
+  - component: {fileID: 190095844}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -386,6 +387,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4042e57fb9e7c2b4d86df21ac4bba559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followObject: {fileID: 1177094399}
+  jumpForce: 4
+  jumpForceMode: 2
+  jumpTimeDelay: 0.25
 --- !u!208 &190095836
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -495,6 +500,7 @@ Transform:
   m_Children:
   - {fileID: 918247687}
   - {fileID: 633804421}
+  - {fileID: 1177094400}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -578,6 +584,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &190095844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 190095833}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46a5b2e34dec3b469c977497ffdf860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTransform: {fileID: 1177094400}
+  scale: 0.25
 --- !u!1 &224884178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFollowDistance: 2.5
+  followDistance: 4
   following: 0
   target: {fileID: 0}
 --- !u!114 &433246438
@@ -2250,6 +2271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFollowDistance: 2.5
+  followDistance: 4
   following: 0
   target: {fileID: 0}
 --- !u!114 &765932090
@@ -2390,6 +2413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFollowDistance: 2.5
+  followDistance: 4
   following: 0
   target: {fileID: 0}
 --- !u!114 &767939091
@@ -2699,6 +2724,43 @@ Prefab:
     - target: {fileID: 4440990778129614, guid: ae20af1fb533acd4f8271aa1ef3752c2, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440990778129614, guid: ae20af1fb533acd4f8271aa1ef3752c2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440990778129614, guid: ae20af1fb533acd4f8271aa1ef3752c2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440990778129614, guid: ae20af1fb533acd4f8271aa1ef3752c2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195191627437070398, guid: ae20af1fb533acd4f8271aa1ef3752c2,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 195191627437070398, guid: ae20af1fb533acd4f8271aa1ef3752c2,
+        type: 2}
+      propertyPath: m_Acceleration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 54079592332682764, guid: ae20af1fb533acd4f8271aa1ef3752c2,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195191627437070398, guid: ae20af1fb533acd4f8271aa1ef3752c2,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 195191627437070398, guid: ae20af1fb533acd4f8271aa1ef3752c2,
+        type: 2}
+      propertyPath: m_AutoBraking
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae20af1fb533acd4f8271aa1ef3752c2, type: 2}
@@ -3139,6 +3201,43 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4625557249637218, guid: 507f181c02bca734eb3f7bdcd79d9b3f, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625557249637218, guid: 507f181c02bca734eb3f7bdcd79d9b3f, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625557249637218, guid: 507f181c02bca734eb3f7bdcd79d9b3f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195824714291143704, guid: 507f181c02bca734eb3f7bdcd79d9b3f,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 195824714291143704, guid: 507f181c02bca734eb3f7bdcd79d9b3f,
+        type: 2}
+      propertyPath: m_Acceleration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 54791891173363132, guid: 507f181c02bca734eb3f7bdcd79d9b3f,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195824714291143704, guid: 507f181c02bca734eb3f7bdcd79d9b3f,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 195824714291143704, guid: 507f181c02bca734eb3f7bdcd79d9b3f,
+        type: 2}
+      propertyPath: m_AutoBraking
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 507f181c02bca734eb3f7bdcd79d9b3f, type: 2}
   m_IsPrefabParent: 0
@@ -3395,6 +3494,77 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8898d412f46f12b4dafc9ebb58c7758a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1177094399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1177094400}
+  - component: {fileID: 1177094403}
+  - component: {fileID: 1177094401}
+  m_Layer: 0
+  m_Name: FollowTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1177094400
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177094399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 190095842}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1177094401
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177094399}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1177094403
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177094399}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1217282351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4514,6 +4684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFollowDistance: 2.5
+  followDistance: 4
   following: 0
   target: {fileID: 0}
 --- !u!114 &1695509657
@@ -4808,6 +4980,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFollowDistance: 2.5
+  followDistance: 4
   following: 1
   target: {fileID: 1802345746}
 --- !u!114 &1802345745
@@ -5341,6 +5515,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFollowDistance: 2.5
+  followDistance: 4
   following: 0
   target: {fileID: 0}
 --- !u!114 &1884483033
@@ -5485,6 +5661,43 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4816323328808004, guid: 9bd2d773115cf0c43a5dffda398c1e5b, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816323328808004, guid: 9bd2d773115cf0c43a5dffda398c1e5b, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816323328808004, guid: 9bd2d773115cf0c43a5dffda398c1e5b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195502848345232212, guid: 9bd2d773115cf0c43a5dffda398c1e5b,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 195502848345232212, guid: 9bd2d773115cf0c43a5dffda398c1e5b,
+        type: 2}
+      propertyPath: m_Acceleration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 54303195133088154, guid: 9bd2d773115cf0c43a5dffda398c1e5b,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195502848345232212, guid: 9bd2d773115cf0c43a5dffda398c1e5b,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 195502848345232212, guid: 9bd2d773115cf0c43a5dffda398c1e5b,
+        type: 2}
+      propertyPath: m_AutoBraking
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9bd2d773115cf0c43a5dffda398c1e5b, type: 2}
   m_IsPrefabParent: 0
@@ -5554,6 +5767,43 @@ Prefab:
     - target: {fileID: 4910266651819016, guid: af536e183c57afa47814d8326c011725, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910266651819016, guid: af536e183c57afa47814d8326c011725, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910266651819016, guid: af536e183c57afa47814d8326c011725, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910266651819016, guid: af536e183c57afa47814d8326c011725, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195463036406717750, guid: af536e183c57afa47814d8326c011725,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 195463036406717750, guid: af536e183c57afa47814d8326c011725,
+        type: 2}
+      propertyPath: m_Acceleration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 54736714129539576, guid: af536e183c57afa47814d8326c011725,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195463036406717750, guid: af536e183c57afa47814d8326c011725,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 195463036406717750, guid: af536e183c57afa47814d8326c011725,
+        type: 2}
+      propertyPath: m_AutoBraking
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af536e183c57afa47814d8326c011725, type: 2}
@@ -5976,6 +6226,43 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4558094682579390, guid: 6a48945010fd117469e4408ece765ba7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558094682579390, guid: 6a48945010fd117469e4408ece765ba7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558094682579390, guid: 6a48945010fd117469e4408ece765ba7, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195993149229088222, guid: 6a48945010fd117469e4408ece765ba7,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 195993149229088222, guid: 6a48945010fd117469e4408ece765ba7,
+        type: 2}
+      propertyPath: m_Acceleration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 54811972330504068, guid: 6a48945010fd117469e4408ece765ba7,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195993149229088222, guid: 6a48945010fd117469e4408ece765ba7,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 195993149229088222, guid: 6a48945010fd117469e4408ece765ba7,
+        type: 2}
+      propertyPath: m_AutoBraking
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a48945010fd117469e4408ece765ba7, type: 2}
   m_IsPrefabParent: 0
@@ -6014,6 +6301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFollowDistance: 2.5
+  followDistance: 4
   following: 0
   target: {fileID: 0}
 --- !u!114 &2103671815
@@ -6269,6 +6558,43 @@ Prefab:
     - target: {fileID: 4553032598221278, guid: ad42e0742f7212f4ab0eb5484e4a7a09, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553032598221278, guid: ad42e0742f7212f4ab0eb5484e4a7a09, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553032598221278, guid: ad42e0742f7212f4ab0eb5484e4a7a09, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553032598221278, guid: ad42e0742f7212f4ab0eb5484e4a7a09, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 195140748609992060, guid: ad42e0742f7212f4ab0eb5484e4a7a09,
+        type: 2}
+      propertyPath: m_StoppingDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 195140748609992060, guid: ad42e0742f7212f4ab0eb5484e4a7a09,
+        type: 2}
+      propertyPath: m_Acceleration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 54387966874412158, guid: ad42e0742f7212f4ab0eb5484e4a7a09,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195140748609992060, guid: ad42e0742f7212f4ab0eb5484e4a7a09,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 195140748609992060, guid: ad42e0742f7212f4ab0eb5484e4a7a09,
+        type: 2}
+      propertyPath: m_AutoBraking
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad42e0742f7212f4ab0eb5484e4a7a09, type: 2}

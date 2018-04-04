@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
+[RequireComponent (typeof (AICharacterControl))]
 public class Follower : MonoBehaviour
 {
+    public float playerFollowDistance = 2.5f;
+    public float followDistance = 4f;
 
     public bool following = false;
     public AICharacterControl target;
@@ -14,12 +17,25 @@ public class Follower : MonoBehaviour
     void Start()
     {
         target = GetComponent<AICharacterControl>();
+        CapsuleCollider collider = GetComponent<CapsuleCollider>();
+        collider.height = GetComponent<NavMeshAgent>().height;
+        collider.center = new Vector3(0, collider.height / 2f, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (target.target != null)
+        {
+            if (target.target.tag == "Player")
+            {
+               target.agent.stoppingDistance = playerFollowDistance;
+            }
+            else
+            {
+                target.agent.stoppingDistance = followDistance;
+            }
+        }
     }
     //void OnCollisionEnter(Collision collision)
     //{
@@ -47,10 +63,10 @@ public class Follower : MonoBehaviour
         UnitData uD = GetComponent<UnitData>();
 
         if (!following && uD.alive) {
-            Leader leader = player.GetComponent<Leader>();
+            Leader leader = player.GetComponentInParent<Leader>();
             Transform targ;
             if (leader.line.Count == 0) {
-                targ = leader.transform;
+                targ = player.transform;
             } else {
                 targ = leader.line.Last.Value.transform;
             }

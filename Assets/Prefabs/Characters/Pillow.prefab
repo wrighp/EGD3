@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 114224104218872420}
   - component: {fileID: 114488995782303726}
   - component: {fileID: 114732123930012242}
+  - component: {fileID: 136060255806464090}
   m_Layer: 0
   m_Name: Pillow
   m_TagString: Untagged
@@ -1538,8 +1539,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1175351346000860}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.059023976, y: 0.06898168, z: -4.843803}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.059023976, y: 0.06898168, z: -7.02}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4771713706992476}
   - {fileID: 4844602406052732}
@@ -2355,7 +2356,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2423,6 +2424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e357c05944bb28f429b5fbdac6e8daa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFollowDistance: 2.5
+  followDistance: 4
   following: 0
   target: {fileID: 0}
 --- !u!114 &114682741292465398
@@ -2466,6 +2469,19 @@ MonoBehaviour:
   eyeBlinkSpeed: 0
   eyeBlinkCurrent: 0
   eyeDirection: 1
+--- !u!136 &136060255806464090
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175351346000860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136112814246652406
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2752,13 +2768,13 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.34
-  m_Speed: 1
-  m_Acceleration: 10
+  m_Speed: 5.5
+  m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 4
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
+  m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.85
   m_BaseOffset: 0

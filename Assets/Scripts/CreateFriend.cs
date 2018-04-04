@@ -69,7 +69,7 @@ public class CreateFriend : MonoBehaviour {
         audioSource.time = .8f;
 
         t.GetComponent<UnitData>().alive = true;
-        t.GetComponent<Follower>().AttemptFollow(gameObject);
+        t.GetComponent<Follower>().AttemptFollow(GetComponent<Leader>().followObject);
 
         GameObject h = Instantiate(heart, t.transform);
         h.GetComponent<HeartMove>().parent = t.transform;
