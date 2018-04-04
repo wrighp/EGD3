@@ -956,7 +956,6 @@ GameObject:
   - component: {fileID: 4376788802178432}
   - component: {fileID: 33192361116562784}
   - component: {fileID: 23888994172517646}
-  - component: {fileID: 95544251269225644}
   m_Layer: 0
   m_Name: Mug
   m_TagString: Untagged
@@ -1897,7 +1896,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1495559668169766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.10242, y: 3, z: -5.345}
+  m_LocalPosition: {x: 2.4514198, y: 0, z: 6.4461055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4752941808446976}
@@ -2374,23 +2373,6 @@ Animator:
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95544251269225644
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1864124307669888}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 5d60807c7bf283649bdb6beb9ddc6dc6, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
