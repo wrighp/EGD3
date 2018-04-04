@@ -52,7 +52,10 @@ public class CreateFriend : MonoBehaviour {
 
         //ANIMATE FREIND
         Instantiate(pS, target.transform.position, Quaternion.identity);
-        spawnQueue.Enqueue(target);
+
+        if (!spawnQueue.Contains(target))
+            spawnQueue.Enqueue(target);
+
         Invoke("InvokeSpawn", .75f);
 
         return true;
