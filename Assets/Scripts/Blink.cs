@@ -23,8 +23,8 @@ public class Blink : MonoBehaviour {
         eyeMaxSize[0] = new Vector3(eyes[0].localScale.x, eyes[0].localScale.y,eyes[0].localScale.z);
         eyeMaxSize[1] = new Vector3(eyes[1].localScale.x, eyes[1].localScale.y, eyes[1].localScale.z);
 
-        eyeBlinkSpeed = Random.Range(1, 3)/5f;
-        eyeBlinkTime = Random.Range(5, 14);
+        eyeBlinkSpeed = GetEyeSpeed();
+        eyeBlinkTime = GetEyeTime();
 
         currentTime = 0;
         eyeBlinkCurrent = 0;
@@ -48,11 +48,11 @@ public class Blink : MonoBehaviour {
 
             if (eyeBlinkCurrent == 0 && eyeDirection == -1) {
                 if (Random.Range(0, 10) < 1) {
-                    eyeBlinkSpeed = Random.Range(1, 3) / 5f;
+                    eyeBlinkSpeed = GetEyeSpeed();
                     eyeBlinkCurrent = 0;
                 } else {
-                    eyeBlinkSpeed = Random.Range(1, 3) / 5f;
-                    eyeBlinkTime = Random.Range(5, 14);
+                    eyeBlinkSpeed = GetEyeSpeed();
+                    eyeBlinkTime = GetEyeTime();
                     currentTime = 0;
                     eyeBlinkCurrent = 0;
                 }
@@ -62,4 +62,13 @@ public class Blink : MonoBehaviour {
 
         }
 	}
+    float GetEyeSpeed()
+    {
+        // return Random.Range(1, 3) / 10f;
+        return .05f;
+    }
+    float GetEyeTime()
+    {
+        return Random.Range(6, 10);
+    }
 }
