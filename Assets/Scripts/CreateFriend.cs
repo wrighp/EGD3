@@ -51,7 +51,8 @@ public class CreateFriend : MonoBehaviour {
         //}
 
         //ANIMATE FREIND
-        Instantiate(pS, target.transform.position, Quaternion.identity);
+        GameObject sys = Instantiate(pS, target.transform);
+        sys.transform.parent = null;
 
         if (!spawnQueue.Contains(target))
             spawnQueue.Enqueue(target);
@@ -73,11 +74,11 @@ public class CreateFriend : MonoBehaviour {
 
         t.GetComponent<UnitData>().alive = true;
         t.GetComponent<Follower>().AttemptFollow(GetComponent<Leader>().followObject);
+    }
 
+
+    public void SpawnHeart(Transform t) {
         GameObject h = Instantiate(heart, t.transform);
         h.GetComponent<HeartMove>().parent = t.transform;
-
-
-        t = null;
     }
 }

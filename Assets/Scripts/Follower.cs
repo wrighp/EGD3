@@ -64,6 +64,7 @@ public class Follower : MonoBehaviour
 
         if (!following && uD.alive) {
             Leader leader = player.GetComponentInParent<Leader>();
+            CreateFriend createFriend = player.GetComponentInParent<CreateFriend>();
             Transform targ;
             if (leader.line.Count == 0) {
                 targ = player.transform;
@@ -73,6 +74,7 @@ public class Follower : MonoBehaviour
             target.target = targ;
             leader.line.AddLast(this);
             following = true;
+            createFriend.SpawnHeart(this.transform);
         }
 
         if (!uD.alive) {
