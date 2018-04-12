@@ -6,6 +6,7 @@ public class CreateFriend : MonoBehaviour {
 
     public static CreateFriend i = null;
     public GameObject heart;
+    public GameObject smoke;
     public GameObject pS;
 
     public AudioClip sound;
@@ -18,37 +19,47 @@ public class CreateFriend : MonoBehaviour {
 
     Queue<GameObject> spawnQueue = new Queue<GameObject>();
 
-    public bool AttemptFriend(GameObject target, List<GameObject> friendLine ) {
-        //List<Requirement> reqs = target.GetComponent<ObjectTags>().freindRequirements;
+    public bool AttemptFriend(GameObject target, LinkedList<Follower> friendLine ) {
+        List<Requirement> reqs = target.GetComponent<UnitData>().ot.friendRequirements;
 
-        ////Prepare the checks by resetting the requirements
-        //foreach (Requirement r in reqs) {
-        //    r.remaining = r.quantity;
-        //}
+        //Prepare the checks by resetting the requirements
+        foreach (Requirement r in reqs) {
+            r.remaining = r.quantity;
+        }
 
-        //foreach (GameObject g in friendLine) {
-        //    List<Tags> tags = g.GetComponent<ObjectTags>().tags;
+        foreach (Follower g in friendLine) {
+            if (reqs.Count == 0) break;
+            List<Tags> tags = g.GetComponent<UnitData>().ot.tags;
 
-        //    bool matchFound = false;
+            bool matchFound = false;
 
-        //    foreach(Tags t in tags) {
-        //        foreach(Requirement r in reqs) {
-        //            if (t == r.requirement) {
-        //                matchFound = true;
-        //                r.remaining--;
-        //            }
-        //        }
-        //    }
+            print(g.name);
 
-        //    if (!matchFound) {
-        //        //No match was found, invalid Friend in the conga line
-        //        break;
-        //    }
-        //}
+            foreach (Tags t in tags) {
+                foreach (Requirement r in reqs) {
+                    if (t == r.requirement) {
+                        
+                        matchFound = true;
+                        SpawnHeart(g.transform);
+                        r.remaining--;
+                        print(r.requirement.ToString() + " " + r.remaining);
+                    }
+                }
+            }
 
-        //foreach (Requirement r in reqs) {
-        //    if (r.remaining != 0) return false; 
-        //}
+            if (!matchFound) {
+                //No match was found, invalid Friend in the conga line
+                SpawnDust(g.transform);
+                break;
+            }
+        }
+
+        foreach (Requirement r in reqs) {
+            if (r.remaining > 0) {
+                SpawnDust(target.transform);
+                return false;
+            }
+        }
 
         //ANIMATE FREIND
         GameObject sys = Instantiate(pS, target.transform);
@@ -80,6 +91,11 @@ public class CreateFriend : MonoBehaviour {
 
     public void SpawnHeart(Transform t) {
         GameObject h = Instantiate(heart, t.transform);
+        h.GetComponent<HeartMove>().parent = t.transform;
+    }
+
+    public void SpawnDust(Transform t) {
+        GameObject h = Instantiate(smoke, t.transform);
         h.GetComponent<HeartMove>().parent = t.transform;
     }
 }

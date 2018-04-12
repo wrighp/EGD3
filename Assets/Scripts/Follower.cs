@@ -78,7 +78,7 @@ public class Follower : MonoBehaviour
         }
 
         if (!uD.alive) {
-            CreateFriend.i.AttemptFriend(gameObject, new List<GameObject>());
+            CreateFriend.i.AttemptFriend(gameObject, GameObject.FindObjectOfType<Leader>().line);
         }
 
     }
