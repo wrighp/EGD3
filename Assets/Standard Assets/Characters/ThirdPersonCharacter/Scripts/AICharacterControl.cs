@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -11,6 +12,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
         public Transform target;                                    // target to aim for
 
+        public float idleWaitTime = 15f;
+        Animator animator;
+        float idleTime = 0f;
+        bool performingIdleAnim;
 
         private void Start()
         {
@@ -20,20 +25,46 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 	        agent.updateRotation = false;
 	        agent.updatePosition = true;
+
+            animator = GetComponent<Animator>();
+            animator.SetBool("Alive", false);
+
         }
 
 
         private void Update()
         {
+
             if (target != null)
                 agent.SetDestination(target.position);
 
-            if (agent.remainingDistance > agent.stoppingDistance)
+            if (agent.remainingDistance > agent.stoppingDistance && !performingIdleAnim) {
                 character.Move(agent.desiredVelocity, false, false);
-            else
+                idleTime = 0;
+            }  else {
                 character.Move(Vector3.zero, false, false);
+            }
+
+            if (idleTime > idleWaitTime && !performingIdleAnim) {
+                print("Start Dance");
+                performingIdleAnim = true;
+                animator.Play("Dance");
+                GetComponent<NavMeshAgent>().speed = 0;
+                AnimatorStateInfo currInfo = animator.GetCurrentAnimatorStateInfo(0);
+                Invoke("StopDance", currInfo.normalizedTime);
+            }
+            if (animator.GetBool("Alive")) {
+                idleTime += Time.deltaTime;
+            }
+
         }
 
+        public void StopDance() {
+            GetComponent<NavMeshAgent>().speed = 1;
+            print("End Dance");
+            performingIdleAnim = false;
+            idleTime = 0;
+        }
 
         public void SetTarget(Transform target)
         {

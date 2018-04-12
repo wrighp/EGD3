@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.9632353, g: 0.94057095, b: 0.9065744, a: 1}
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 52a12eb317df8ea4a95de0475b49e1db, type: 2}
   m_HaloStrength: 0.5
@@ -335,6 +335,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114230703529594766, guid: d7d599b48b1b9c541a212416be07b012,
+        type: 2}
+      propertyPath: idleWaitTime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7d599b48b1b9c541a212416be07b012, type: 2}
   m_IsPrefabParent: 0
@@ -515,6 +520,7 @@ GameObject:
   - component: {fileID: 190095834}
   - component: {fileID: 190095843}
   - component: {fileID: 190095844}
+  - component: {fileID: 190095845}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -758,6 +764,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 1177094400}
   scale: 0.25
+--- !u!114 &190095845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 190095833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1486fa44062a74040a6529017b8e907c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &194304440
 Prefab:
   m_ObjectHideFlags: 0
@@ -3258,6 +3275,14 @@ Prefab:
     - target: {fileID: 4079325982029446, guid: 8eab18ce9c19ed244a22a98125ae3e74, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590351533988010, guid: 8eab18ce9c19ed244a22a98125ae3e74, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476508840377286, guid: 8eab18ce9c19ed244a22a98125ae3e74, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8eab18ce9c19ed244a22a98125ae3e74, type: 2}

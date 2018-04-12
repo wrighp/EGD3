@@ -74,6 +74,7 @@ public class CreateFriend : MonoBehaviour {
 
         t.GetComponent<UnitData>().alive = true;
         t.GetComponent<Follower>().AttemptFollow(GetComponent<Leader>().followObject);
+        t.GetComponent<Animator>().SetBool("Alive", true);
     }
 
 
