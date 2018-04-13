@@ -9,7 +9,8 @@ public class CreateFriend : MonoBehaviour {
     public GameObject smoke;
     public GameObject pS;
 
-    public AudioClip sound;
+    public AudioClip popSound;
+    public AudioClip fizzleSound;
     AudioSource audioSource;
 
     // Use this for initialization
@@ -52,6 +53,9 @@ public class CreateFriend : MonoBehaviour {
 
         foreach (Requirement r in reqs) {
             if (r.remaining > 0) {
+                audioSource = GetComponent<AudioSource>();
+                audioSource.PlayOneShot(fizzleSound, 0.7F);
+                audioSource.time = .8f;
                 SpawnDust(target.transform);
                 return false;
             }
@@ -76,7 +80,7 @@ public class CreateFriend : MonoBehaviour {
         t.transform.GetChild(1).gameObject.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
-        audioSource.PlayOneShot(sound, 0.7F);
+        audioSource.PlayOneShot(popSound, 0.7F);
         audioSource.time = .8f;
 
         t.GetComponent<UnitData>().alive = true;

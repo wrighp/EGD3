@@ -3282,6 +3282,16 @@ Prefab:
       propertyPath: m_MoveSpeedMultiplier
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114199282510406056, guid: ba8b84f9daee7f74c86a345332e443ac,
+        type: 2}
+      propertyPath: popSound
+      value: 
+      objectReference: {fileID: 8300000, guid: af8094f9f08850945b731d7181db348d, type: 3}
+    - target: {fileID: 114199282510406056, guid: ba8b84f9daee7f74c86a345332e443ac,
+        type: 2}
+      propertyPath: fizzleSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 04d56fd0fd986144b91daf9053ea157b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba8b84f9daee7f74c86a345332e443ac, type: 2}
   m_IsPrefabParent: 0
