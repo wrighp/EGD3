@@ -7,6 +7,7 @@ public class FriendEffects : MonoBehaviour {
 
     PostProcessingProfile postProcessingProfile;
     RectTransform uiMaskBack;
+    AudioSource[] musicPlayers;
 
     public float speed = 2f;
     public float maxRotation = 15f;
@@ -15,6 +16,7 @@ public class FriendEffects : MonoBehaviour {
     void Start () {
         postProcessingProfile = Camera.main.GetComponent<PostProcessingBehaviour>().profile;
         uiMaskBack = GameObject.Find("HeartUI").GetComponent<RectTransform>();
+        musicPlayers = GameObject.Find("MusicPlayer").GetComponents<AudioSource>();
 
     }
 	
@@ -39,5 +41,12 @@ public class FriendEffects : MonoBehaviour {
 
         uiMaskBack.localScale = Vector3.Lerp(uiMaskBack.localScale, next , Time.deltaTime);
         uiMaskBack.rotation = Quaternion.Euler(0f, 0f, maxRotation * (Mathf.Sin(Time.time * speed)));
+
+
+        for (int i = 0; i < live/3 && i < 4; ++i) {
+            musicPlayers[i].volume = Mathf.Lerp(musicPlayers[i].volume,1,Time.deltaTime);
+        }
+
+
     }
 }
