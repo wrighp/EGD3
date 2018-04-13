@@ -46,12 +46,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
 
             if (idleTime > idleWaitTime && !performingIdleAnim) {
-                print("Start Dance");
                 performingIdleAnim = true;
                 animator.Play("Dance");
                 GetComponent<NavMeshAgent>().speed = 0;
-                AnimatorStateInfo currInfo = animator.GetCurrentAnimatorStateInfo(0);
-                Invoke("StopDance", currInfo.normalizedTime);
             }
             if (animator.GetBool("Alive")) {
                 idleTime += Time.deltaTime;
@@ -61,7 +58,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         public void StopDance() {
             GetComponent<NavMeshAgent>().speed = 1;
-            print("End Dance");
             performingIdleAnim = false;
             idleTime = 0;
         }
