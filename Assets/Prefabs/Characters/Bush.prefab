@@ -2439,6 +2439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  idleWaitTime: 15
 --- !u!114 &114977290907111016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2450,7 +2451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8882b3a5991441a46909c839d4159d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ot: {fileID: 11400000, guid: 3bc49c33b3db2054ebf2457ad32dbe40, type: 2}
+  ot: {fileID: 11400000, guid: bc9b91fc4e0c5ae46a8c17068a53a1fe, type: 2}
   alive: 0
 --- !u!136 &136228707726956112
 CapsuleCollider:

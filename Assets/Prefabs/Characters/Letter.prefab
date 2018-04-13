@@ -2389,6 +2389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  idleWaitTime: 15
 --- !u!114 &114334139743801020
 MonoBehaviour:
   m_ObjectHideFlags: 1
