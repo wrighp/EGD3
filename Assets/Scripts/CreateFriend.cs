@@ -33,16 +33,12 @@ public class CreateFriend : MonoBehaviour {
 
             bool matchFound = false;
 
-            print(g.name);
-
             foreach (Tags t in tags) {
                 foreach (Requirement r in reqs) {
-                    if (t == r.requirement) {
-                        
+                    if (t == r.requirement) {        
                         matchFound = true;
                         SpawnHeart(g.transform);
                         r.remaining--;
-                        print(r.requirement.ToString() + " " + r.remaining);
                     }
                 }
             }
