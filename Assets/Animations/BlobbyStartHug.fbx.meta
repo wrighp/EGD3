@@ -30,6 +30,30 @@ ModelImporter:
     100044: ChrisZ_BlobbyNewRigNoIK:SpinalHugCtrl
     100046: ChrisZ_BlobbyNewRigNoIK:Spine1
     100048: ChrisZ_BlobbyNewRigNoIK:Spine2
+    100050: ChrisZ_BlobbyNewRigNoIK1:Blobby
+    100052: ChrisZ_BlobbyNewRigNoIK1:Head
+    100054: ChrisZ_BlobbyNewRigNoIK1:Hips
+    100056: ChrisZ_BlobbyNewRigNoIK1:LeftElbow
+    100058: ChrisZ_BlobbyNewRigNoIK1:LeftFoot
+    100060: ChrisZ_BlobbyNewRigNoIK1:LeftForeArm
+    100062: ChrisZ_BlobbyNewRigNoIK1:LeftHand
+    100064: ChrisZ_BlobbyNewRigNoIK1:LeftKnee
+    100066: ChrisZ_BlobbyNewRigNoIK1:LeftLeg
+    100068: ChrisZ_BlobbyNewRigNoIK1:LeftShoulder
+    100070: ChrisZ_BlobbyNewRigNoIK1:LeftShoulderHugCtrl
+    100072: ChrisZ_BlobbyNewRigNoIK1:Master
+    100074: ChrisZ_BlobbyNewRigNoIK1:Neck
+    100076: ChrisZ_BlobbyNewRigNoIK1:RightElbow
+    100078: ChrisZ_BlobbyNewRigNoIK1:RightFoot
+    100080: ChrisZ_BlobbyNewRigNoIK1:RightForeArm
+    100082: ChrisZ_BlobbyNewRigNoIK1:RightHand
+    100084: ChrisZ_BlobbyNewRigNoIK1:RightKnee
+    100086: ChrisZ_BlobbyNewRigNoIK1:RightLeg
+    100088: ChrisZ_BlobbyNewRigNoIK1:RightShoulder
+    100090: ChrisZ_BlobbyNewRigNoIK1:RightShoulderHugCtrl
+    100092: ChrisZ_BlobbyNewRigNoIK1:SpinalHugCtrl
+    100094: ChrisZ_BlobbyNewRigNoIK1:Spine1
+    100096: ChrisZ_BlobbyNewRigNoIK1:Spine2
     400000: //RootNode
     400002: ChrisZ_BlobbyNewRigNoIK:Blobby
     400004: ChrisZ_BlobbyNewRigNoIK:Head
@@ -55,12 +79,40 @@ ModelImporter:
     400044: ChrisZ_BlobbyNewRigNoIK:SpinalHugCtrl
     400046: ChrisZ_BlobbyNewRigNoIK:Spine1
     400048: ChrisZ_BlobbyNewRigNoIK:Spine2
+    400050: ChrisZ_BlobbyNewRigNoIK1:Blobby
+    400052: ChrisZ_BlobbyNewRigNoIK1:Head
+    400054: ChrisZ_BlobbyNewRigNoIK1:Hips
+    400056: ChrisZ_BlobbyNewRigNoIK1:LeftElbow
+    400058: ChrisZ_BlobbyNewRigNoIK1:LeftFoot
+    400060: ChrisZ_BlobbyNewRigNoIK1:LeftForeArm
+    400062: ChrisZ_BlobbyNewRigNoIK1:LeftHand
+    400064: ChrisZ_BlobbyNewRigNoIK1:LeftKnee
+    400066: ChrisZ_BlobbyNewRigNoIK1:LeftLeg
+    400068: ChrisZ_BlobbyNewRigNoIK1:LeftShoulder
+    400070: ChrisZ_BlobbyNewRigNoIK1:LeftShoulderHugCtrl
+    400072: ChrisZ_BlobbyNewRigNoIK1:Master
+    400074: ChrisZ_BlobbyNewRigNoIK1:Neck
+    400076: ChrisZ_BlobbyNewRigNoIK1:RightElbow
+    400078: ChrisZ_BlobbyNewRigNoIK1:RightFoot
+    400080: ChrisZ_BlobbyNewRigNoIK1:RightForeArm
+    400082: ChrisZ_BlobbyNewRigNoIK1:RightHand
+    400084: ChrisZ_BlobbyNewRigNoIK1:RightKnee
+    400086: ChrisZ_BlobbyNewRigNoIK1:RightLeg
+    400088: ChrisZ_BlobbyNewRigNoIK1:RightShoulder
+    400090: ChrisZ_BlobbyNewRigNoIK1:RightShoulderHugCtrl
+    400092: ChrisZ_BlobbyNewRigNoIK1:SpinalHugCtrl
+    400094: ChrisZ_BlobbyNewRigNoIK1:Spine1
+    400096: ChrisZ_BlobbyNewRigNoIK1:Spine2
     2100000: ChrisZ_BlobbyNewRigNoIK_BlobbyBody
     2100002: ChrisZ_BlobbyNewRigNoIK_BlobbyHands
+    2100004: ChrisZ_BlobbyNewRigNoIK1_BlobbyBody
+    2100006: ChrisZ_BlobbyNewRigNoIK1_BlobbyHands
     4300000: ChrisZ_BlobbyNewRigNoIK:Blobby
+    4300002: ChrisZ_BlobbyNewRigNoIK1:Blobby
     7400000: Take 001
     9500000: //RootNode
     13700000: ChrisZ_BlobbyNewRigNoIK:Blobby
+    13700002: ChrisZ_BlobbyNewRigNoIK1:Blobby
   externalObjects: {}
   materials:
     importMaterials: 1
