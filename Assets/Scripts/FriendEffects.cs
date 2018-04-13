@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PostProcessing;
 
-public class ScreenFade : MonoBehaviour {
+public class FriendEffects : MonoBehaviour {
 
     PostProcessingProfile postProcessingProfile;
     RectTransform uiMaskBack;
 
+    public float speed = 2f;
+    public float maxRotation = 15f;
+
     // Use this for initialization
-	void Start () {
+    void Start () {
         postProcessingProfile = Camera.main.GetComponent<PostProcessingBehaviour>().profile;
-        uiMaskBack = GameObject.Find("HeartBackGroundLayer").GetComponent<RectTransform>();
+        uiMaskBack = GameObject.Find("HeartUI").GetComponent<RectTransform>();
 
     }
 	
@@ -30,9 +33,11 @@ public class ScreenFade : MonoBehaviour {
         set.basic.saturation = Mathf.Lerp(set.basic.saturation, live / total + .25f, Time.deltaTime);
         postProcessingProfile.colorGrading.settings = set;
 
-        Vector3 next = new Vector3(0, -150f + 100f * (live/total), 0);
-        next = next * (1 + .1f * Mathf.Sin(Time.time));
-        print(next);
-        uiMaskBack.anchoredPosition = Vector3.Lerp(uiMaskBack.anchoredPosition, next , Time.deltaTime);
+        Vector3 next = new Vector3(.2f + 1f * (live / total), .2f + 1f * (live/total), 0);
+        //next = next * (1 + .1f * Mathf.Sin(Time.time));
+
+
+        uiMaskBack.localScale = Vector3.Lerp(uiMaskBack.localScale, next , Time.deltaTime);
+        uiMaskBack.rotation = Quaternion.Euler(0f, 0f, maxRotation * (Mathf.Sin(Time.time * speed)));
     }
 }

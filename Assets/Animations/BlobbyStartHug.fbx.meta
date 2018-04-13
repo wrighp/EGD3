@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 7351c946e79bd3b4b8b8bbfa272080f8
+timeCreated: 1523658800
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ChrisZ_BlobbyNewRigNoIK:Blobby
+    100004: ChrisZ_BlobbyNewRigNoIK:Head
+    100006: ChrisZ_BlobbyNewRigNoIK:Hips
+    100008: ChrisZ_BlobbyNewRigNoIK:LeftElbow
+    100010: ChrisZ_BlobbyNewRigNoIK:LeftFoot
+    100012: ChrisZ_BlobbyNewRigNoIK:LeftForeArm
+    100014: ChrisZ_BlobbyNewRigNoIK:LeftHand
+    100016: ChrisZ_BlobbyNewRigNoIK:LeftKnee
+    100018: ChrisZ_BlobbyNewRigNoIK:LeftLeg
+    100020: ChrisZ_BlobbyNewRigNoIK:LeftShoulder
+    100022: ChrisZ_BlobbyNewRigNoIK:LeftShoulderHugCtrl
+    100024: ChrisZ_BlobbyNewRigNoIK:Master
+    100026: ChrisZ_BlobbyNewRigNoIK:Neck
+    100028: ChrisZ_BlobbyNewRigNoIK:RightElbow
+    100030: ChrisZ_BlobbyNewRigNoIK:RightFoot
+    100032: ChrisZ_BlobbyNewRigNoIK:RightForeArm
+    100034: ChrisZ_BlobbyNewRigNoIK:RightHand
+    100036: ChrisZ_BlobbyNewRigNoIK:RightKnee
+    100038: ChrisZ_BlobbyNewRigNoIK:RightLeg
+    100040: ChrisZ_BlobbyNewRigNoIK:RightShoulder
+    100042: ChrisZ_BlobbyNewRigNoIK:RightShoulderHugCtrl
+    100044: ChrisZ_BlobbyNewRigNoIK:SpinalHugCtrl
+    100046: ChrisZ_BlobbyNewRigNoIK:Spine1
+    100048: ChrisZ_BlobbyNewRigNoIK:Spine2
+    400000: //RootNode
+    400002: ChrisZ_BlobbyNewRigNoIK:Blobby
+    400004: ChrisZ_BlobbyNewRigNoIK:Head
+    400006: ChrisZ_BlobbyNewRigNoIK:Hips
+    400008: ChrisZ_BlobbyNewRigNoIK:LeftElbow
+    400010: ChrisZ_BlobbyNewRigNoIK:LeftFoot
+    400012: ChrisZ_BlobbyNewRigNoIK:LeftForeArm
+    400014: ChrisZ_BlobbyNewRigNoIK:LeftHand
+    400016: ChrisZ_BlobbyNewRigNoIK:LeftKnee
+    400018: ChrisZ_BlobbyNewRigNoIK:LeftLeg
+    400020: ChrisZ_BlobbyNewRigNoIK:LeftShoulder
+    400022: ChrisZ_BlobbyNewRigNoIK:LeftShoulderHugCtrl
+    400024: ChrisZ_BlobbyNewRigNoIK:Master
+    400026: ChrisZ_BlobbyNewRigNoIK:Neck
+    400028: ChrisZ_BlobbyNewRigNoIK:RightElbow
+    400030: ChrisZ_BlobbyNewRigNoIK:RightFoot
+    400032: ChrisZ_BlobbyNewRigNoIK:RightForeArm
+    400034: ChrisZ_BlobbyNewRigNoIK:RightHand
+    400036: ChrisZ_BlobbyNewRigNoIK:RightKnee
+    400038: ChrisZ_BlobbyNewRigNoIK:RightLeg
+    400040: ChrisZ_BlobbyNewRigNoIK:RightShoulder
+    400042: ChrisZ_BlobbyNewRigNoIK:RightShoulderHugCtrl
+    400044: ChrisZ_BlobbyNewRigNoIK:SpinalHugCtrl
+    400046: ChrisZ_BlobbyNewRigNoIK:Spine1
+    400048: ChrisZ_BlobbyNewRigNoIK:Spine2
+    2100000: ChrisZ_BlobbyNewRigNoIK_BlobbyBody
+    2100002: ChrisZ_BlobbyNewRigNoIK_BlobbyHands
+    4300000: ChrisZ_BlobbyNewRigNoIK:Blobby
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: ChrisZ_BlobbyNewRigNoIK:Blobby
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

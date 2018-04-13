@@ -53,6 +53,10 @@ ModelImporter:
     100090: RightShoulder
     100092: Spine1
     100094: Spine2
+    100096: LeftShoulderHugCtrl
+    100098: Master
+    100100: RightShoulderHugCtrl
+    100102: SpinalHugCtrl
     400000: Blobby
     400002: //RootNode
     400004: Character1_Head
@@ -101,6 +105,10 @@ ModelImporter:
     400090: RightShoulder
     400092: Spine1
     400094: Spine2
+    400096: LeftShoulderHugCtrl
+    400098: Master
+    400100: RightShoulderHugCtrl
+    400102: SpinalHugCtrl
     2100000: BlobbyBody
     2100002: BlobbyHands
     4300000: Blobby
@@ -119,7 +127,9 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
+      does not match position in animation file:\n\t'LeftShoulder' : position error
+      = 156.068130 mm\n\t'RightShoulder' : position error = 129.819046 mm\n"
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
