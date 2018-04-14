@@ -7227,9 +7227,46 @@ Prefab:
       propertyPath: spreadCustomCurve.m_RotationOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82344428356171382, guid: ba8b84f9daee7f74c86a345332e443ac,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82997156432115184, guid: ba8b84f9daee7f74c86a345332e443ac,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82715956733134088, guid: ba8b84f9daee7f74c86a345332e443ac,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82488988613401622, guid: ba8b84f9daee7f74c86a345332e443ac,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba8b84f9daee7f74c86a345332e443ac, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1286706769 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1910984975065434, guid: ba8b84f9daee7f74c86a345332e443ac,
+    type: 2}
+  m_PrefabInternal: {fileID: 1286706768}
+--- !u!114 &1286706770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1286706769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46632a6a3f5519a428b6fb06d39bf23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 6db7bfac3a973f84bbccc95d60c5dc34, type: 2}
 --- !u!1001 &1299251563
 Prefab:
   m_ObjectHideFlags: 0
