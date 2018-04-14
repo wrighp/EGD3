@@ -11,8 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b16f2d3c0507547b8c015725485a42, type: 3}
   m_Name: Box
   m_EditorClassIdentifier: 
-  tags: 00000000
-  friendRequirements:
-  - requirement: 0
-    quantity: 2
-    remaining: 2
+  tags: 0200000004000000
+  friendRequirements: []

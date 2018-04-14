@@ -16,4 +16,4 @@ public class Requirement
     public int remaining;
 }
 
-public enum Tags { Plant, Water, Garbage, Food };
+public enum Tags { Plant, Water, Garbage, Food, Mail, Other };

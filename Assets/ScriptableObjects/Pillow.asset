@@ -11,15 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b16f2d3c0507547b8c015725485a42, type: 3}
   m_Name: Pillow
   m_EditorClassIdentifier: 
-  liveForm: {fileID: 1175351346000860, guid: ae20af1fb533acd4f8271aa1ef3752c2, type: 2}
-  tags: 00000000
-  freindRequirements:
-  - requirement: 0
-    quantity: 0
-    remaining: 0
-  - requirement: 2
-    quantity: 0
-    remaining: 0
-  - requirement: 0
-    quantity: 0
-    remaining: 0
+  tags: 05000000
+  friendRequirements: []

@@ -9,13 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0b16f2d3c0507547b8c015725485a42, type: 3}
-  m_Name: Bush
+  m_Name: Banana
   m_EditorClassIdentifier: 
-  tags: 00000000
-  friendRequirements:
-  - requirement: 0
-    quantity: 1
-    remaining: 0
-  - requirement: 1
-    quantity: 1
-    remaining: 0
+  tags: 0000000003000000
+  friendRequirements: []
