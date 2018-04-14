@@ -132,7 +132,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -172,8 +172,269 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
-    human: []
-    skeleton: []
+    human:
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:LeftLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:RightLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:LeftKnee
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:RightKnee
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:LeftShoulder
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:RightShoulder
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:LeftElbow
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:RightElbow
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ChrisZ_BlobbyNewRigNoIK1:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: BlobbyStartHug(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:Blobby
+      parentName: BlobbyStartHug(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:LeftShoulderHugCtrl
+      parentName: BlobbyStartHug(Clone)
+      position: {x: -0.016272886, y: 0.038163602, z: -0.018667832}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:Master
+      parentName: BlobbyStartHug(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:RightShoulderHugCtrl
+      parentName: BlobbyStartHug(Clone)
+      position: {x: 0.016788343, y: 0.037718575, z: -0.019048592}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:SpinalHugCtrl
+      parentName: BlobbyStartHug(Clone)
+      position: {x: -0, y: 0.056417882, z: -0.027866952}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:Hips
+      parentName: BlobbyStartHug(Clone)
+      position: {x: -0.0002438713, y: 0.025451535, z: 0.0000000050476268}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:LeftLeg
+      parentName: ChrisZ_BlobbyNewRigNoIK1:Hips
+      position: {x: -0.010985957, y: -0.009650482, z: -0.00005631711}
+      rotation: {x: 0.49703625, y: -0.50573075, z: 0.49420282, w: 0.5029463}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:LeftKnee
+      parentName: ChrisZ_BlobbyNewRigNoIK1:LeftLeg
+      position: {x: 0.0005683489, y: 0.000000055678196, z: 0.006751091}
+      rotation: {x: 0.00015899539, y: 0.008729428, z: 0.00015082955, w: 0.999962}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000005}
+    - name: ChrisZ_BlobbyNewRigNoIK1:LeftFoot
+      parentName: ChrisZ_BlobbyNewRigNoIK1:LeftKnee
+      position: {x: -0.00045766364, y: 0.00000009279691, z: 0.006692057}
+      rotation: {x: -0.49270692, y: 0.50131744, z: -0.4986791, w: 0.5071883}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: ChrisZ_BlobbyNewRigNoIK1:RightLeg
+      parentName: ChrisZ_BlobbyNewRigNoIK1:Hips
+      position: {x: 0.0114736995, y: -0.0096166385, z: -0.00015424131}
+      rotation: {x: 0.49614796, y: -0.50634557, z: 0.49357295, w: 0.50382257}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: ChrisZ_BlobbyNewRigNoIK1:RightKnee
+      parentName: ChrisZ_BlobbyNewRigNoIK1:RightLeg
+      position: {x: 0.00044874876, y: 0.00000004677816, z: 0.0065006334}
+      rotation: {x: 0.0283117, y: 0.006078705, z: -0.000047922134, w: 0.99958074}
+      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000005}
+    - name: ChrisZ_BlobbyNewRigNoIK1:RightFoot
+      parentName: ChrisZ_BlobbyNewRigNoIK1:RightKnee
+      position: {x: -0.00057042344, y: -0.00000014568349, z: 0.007122406}
+      rotation: {x: -0.5072279, y: 0.48907295, z: -0.51069325, w: 0.49266607}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.9999999}
+    - name: ChrisZ_BlobbyNewRigNoIK1:Spine1
+      parentName: ChrisZ_BlobbyNewRigNoIK1:Hips
+      position: {x: -0.00008728648, y: 0.014875686, z: -0.000000007077037}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:Spine2
+      parentName: ChrisZ_BlobbyNewRigNoIK1:Spine1
+      position: {x: -0.00004914461, y: 0.012208181, z: -0.0000000058940697}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:LeftShoulder
+      parentName: ChrisZ_BlobbyNewRigNoIK1:Spine2
+      position: {x: -0.01663, y: -0.00114, z: 0}
+      rotation: {x: -0.0019861918, y: -0.70682716, z: -0.001986339, w: 0.7073808}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.000001}
+    - name: ChrisZ_BlobbyNewRigNoIK1:LeftElbow
+      parentName: ChrisZ_BlobbyNewRigNoIK1:LeftShoulder
+      position: {x: -0.00023657724, y: 0.0000000010404132, z: 0.015370642}
+      rotation: {x: 0.0025431283, y: -0.0003914535, z: -0, w: 0.99999666}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: ChrisZ_BlobbyNewRigNoIK1:LeftForeArm
+      parentName: ChrisZ_BlobbyNewRigNoIK1:LeftElbow
+      position: {x: 0.00035588982, y: -8.5662577e-10, z: 0.01013273}
+      rotation: {x: 0.010227735, y: 0.012071688, z: -0.000118264405, w: 0.99987483}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000004}
+    - name: ChrisZ_BlobbyNewRigNoIK1:LeftHand
+      parentName: ChrisZ_BlobbyNewRigNoIK1:LeftForeArm
+      position: {x: 5.6943275e-18, y: -2.0775528e-18, z: 0.008938411}
+      rotation: {x: -0.007129151, y: 0.6984842, z: -0.006959062, w: 0.71555614}
+      scale: {x: 0.99999994, y: 1.0000002, z: 0.9999997}
+    - name: ChrisZ_BlobbyNewRigNoIK1:RightShoulder
+      parentName: ChrisZ_BlobbyNewRigNoIK1:Spine2
+      position: {x: 0.016040012, y: -0.00017448222, z: 0.00013094963}
+      rotation: {x: 0.70647395, y: 0.010849817, z: 0.707573, w: -0.010832963}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: ChrisZ_BlobbyNewRigNoIK1:RightElbow
+      parentName: ChrisZ_BlobbyNewRigNoIK1:RightShoulder
+      position: {x: -0.00050878996, y: 0, z: 0.014081152}
+      rotation: {x: -0.0068715294, y: -0.0007770841, z: 0.000018492807, w: 0.9999761}
+      scale: {x: 0.9999998, y: 0.99999964, z: 0.9999998}
+    - name: ChrisZ_BlobbyNewRigNoIK1:RightForeArm
+      parentName: ChrisZ_BlobbyNewRigNoIK1:RightElbow
+      position: {x: 0.0005237153, y: -1.5120913e-15, z: 0.009008156}
+      rotation: {x: 0.0023411433, y: -0.0029151076, z: 0.00005616412, w: 0.999993}
+      scale: {x: 1.0000007, y: 1.0000013, z: 1.0000005}
+    - name: ChrisZ_BlobbyNewRigNoIK1:RightHand
+      parentName: ChrisZ_BlobbyNewRigNoIK1:RightForeArm
+      position: {x: -2.0330715e-17, y: -3.0292462e-17, z: 0.008932943}
+      rotation: {x: -0.7091242, y: -0.007615874, z: -0.70500094, w: -0.007660417}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.99999994}
+    - name: ChrisZ_BlobbyNewRigNoIK1:Neck
+      parentName: ChrisZ_BlobbyNewRigNoIK1:Spine2
+      position: {x: -0.000036146597, y: 0.014409519, z: -0.0000000036393901}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ChrisZ_BlobbyNewRigNoIK1:Head
+      parentName: ChrisZ_BlobbyNewRigNoIK1:Neck
+      position: {x: 0.000002064618, y: 0.009026406, z: 1.0106955e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -184,10 +445,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

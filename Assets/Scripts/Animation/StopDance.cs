@@ -17,7 +17,16 @@ public class StopDance : StateMachineBehaviour {
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        animator.gameObject.GetComponent<AICharacterControl>().StopDance();
+        AICharacterControl aic = animator.gameObject.GetComponent<AICharacterControl>();
+        if (aic != null) {
+            aic.StopDance();
+            return;
+        }
+        ThirdPersonUserControl tpc = animator.gameObject.GetComponent<ThirdPersonUserControl>();
+        if (tpc != null) {
+            tpc.m_rooted = false;
+            return;
+        }
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here

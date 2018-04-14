@@ -45,8 +45,10 @@ public class Leader : MonoBehaviour {
         {
             if (!triggerPressed)
             {
-                print("Hug");
+                ThirdPersonUserControl tpc = gameObject.GetComponent<ThirdPersonUserControl>();
+                tpc.m_rooted = true;
                 triggerPressed = true;
+                gameObject.GetComponent<Animator>().Play("Start Hug");
                 performHug();
             }
         }
