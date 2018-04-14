@@ -12,7 +12,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
         public Transform target;                                    // target to aim for
 
-        public float idleWaitTime = 15f;
+        float idleWaitTime = 15f;
         Animator animator;
         float idleTime = 0f;
         bool performingIdleAnim;
@@ -28,7 +28,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             animator = GetComponent<Animator>();
             animator.SetBool("Alive", false);
-
+            idleTime = UnityEngine.Random.Range(15, 35);
         }
 
 
