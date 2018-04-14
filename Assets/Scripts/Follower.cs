@@ -75,6 +75,7 @@ public class Follower : MonoBehaviour
             leader.line.AddLast(this);
             following = true;
             createFriend.SpawnHeart(this.transform);
+            FollowerListingManager.i.AddFriend(gameObject);
         }
 
         if (!uD.alive) {

@@ -117,6 +117,7 @@ public class Leader : MonoBehaviour {
         }
 
         Follower last = line.Last.Value;
+        FollowerListingManager.i.RemoveFriend(last.gameObject);
         last.following = false;
         last.target.target = null;
         line.RemoveLast();
