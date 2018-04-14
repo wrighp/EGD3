@@ -36,12 +36,9 @@ public class FriendEffects : MonoBehaviour {
         postProcessingProfile.colorGrading.settings = set;
 
         Vector3 next = new Vector3(.2f + 1f * (live / total), .2f + 1f * (live/total), 0);
-        //next = next * (1 + .1f * Mathf.Sin(Time.time));
-
-
         uiMaskBack.localScale = Vector3.Lerp(uiMaskBack.localScale, next , Time.deltaTime);
         uiMaskBack.rotation = Quaternion.Euler(0f, 0f, maxRotation * (Mathf.Sin(Time.time * speed)));
-
+        uiMaskBack.GetChild(0).transform.localScale = Vector3.one * (1 + .25f * Mathf.Sin(Time.time));
 
         for (int i = 0; i < live/3 && i < 4; ++i) {
             musicPlayers[i].volume = Mathf.Lerp(musicPlayers[i].volume,1,Time.deltaTime);
