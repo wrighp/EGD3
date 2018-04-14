@@ -28,6 +28,8 @@ public class CreateFriend : MonoBehaviour {
             r.remaining = r.quantity;
         }
 
+        bool failed = false;
+
         foreach (Follower g in friendLine) {
             if (reqs.Count == 0) break;
             List<Tags> tags = g.GetComponent<UnitData>().ot.tags;
@@ -47,10 +49,9 @@ public class CreateFriend : MonoBehaviour {
             if (!matchFound) {
                 //No match was found, invalid Friend in the conga line
                 SpawnDust(g.transform);
-                break;
+                failed = true;
             }
         }
-
         foreach (Requirement r in reqs) {
             if (r.remaining > 0) {
                 audioSource = GetComponent<AudioSource>();
@@ -60,6 +61,9 @@ public class CreateFriend : MonoBehaviour {
                 return false;
             }
         }
+
+        if (failed)
+            return false;
 
         //ANIMATE FREIND
         GameObject sys = Instantiate(pS, target.transform);
