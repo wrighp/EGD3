@@ -14,8 +14,8 @@ TagManager:
   - 
   - 
   - CameraCollider
-  - 
-  - 
+  - NonRendered
+  - UIRender
   - 
   - 
   - 
