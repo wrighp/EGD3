@@ -23,7 +23,6 @@ public class FollowerListingManager : MonoBehaviour {
     }
 
     public void RemoveFriend(GameObject gO)  {
-        GameObject.Find(gO.name + "_Camera").GetComponent<Camera>().enabled = false;
-        Destroy(GameObject.Find(gO.name + "_RenderImage"));
+        GameObject.Find(gO.name + "_RenderImage").GetComponent<DeleteItem>().StartEffect(gO.name);
     }
 }
