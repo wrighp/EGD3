@@ -9,6 +9,7 @@ ModelImporter:
     400000: //RootNode
     2100000: BushWood
     2100002: BushLeaf
+    2100004: lambert1
     2300000: //RootNode
     3300000: //RootNode
     4300000: Bush

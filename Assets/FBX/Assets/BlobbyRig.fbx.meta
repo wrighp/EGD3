@@ -111,6 +111,7 @@ ModelImporter:
     400102: SpinalHugCtrl
     2100000: BlobbyBody
     2100002: BlobbyHands
+    2100004: lambert1
     4300000: Blobby
     9500000: //RootNode
     13700000: Blobby
