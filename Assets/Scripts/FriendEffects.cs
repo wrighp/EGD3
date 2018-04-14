@@ -32,8 +32,15 @@ public class FriendEffects : MonoBehaviour {
         }
         
         ColorGradingModel.Settings set = postProcessingProfile.colorGrading.settings;
-        set.basic.saturation = Mathf.Lerp(set.basic.saturation, live / total + .25f, Time.deltaTime);
-        postProcessingProfile.colorGrading.settings = set;
+        if(live >= 1)
+        {
+            set.basic.saturation = Mathf.Lerp(set.basic.saturation, 1, Time.deltaTime);
+            postProcessingProfile.colorGrading.settings = set;
+        } else {
+            set.basic.saturation = Mathf.Lerp(set.basic.saturation, live / total + .25f, Time.deltaTime);
+            postProcessingProfile.colorGrading.settings = set;
+        }
+
 
         Vector3 next = new Vector3(.2f + 1f * (live / total), .2f + 1f * (live/total), 0);
         uiMaskBack.localScale = Vector3.Lerp(uiMaskBack.localScale, next , Time.deltaTime);

@@ -45,6 +45,7 @@ public class Leader : MonoBehaviour {
         {
             if (!triggerPressed)
             {
+                gameObject.GetComponent<Animator>().Play("HugStart");
                 print("Hug");
                 triggerPressed = true;
                 performHug();

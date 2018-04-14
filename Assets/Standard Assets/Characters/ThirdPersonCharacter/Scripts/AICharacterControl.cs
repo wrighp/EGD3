@@ -16,6 +16,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         Animator animator;
         float idleTime = 0f;
         bool performingIdleAnim;
+        float storeSpeed;
 
         private void Start()
         {
@@ -48,6 +49,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (idleTime > idleWaitTime && !performingIdleAnim) {
                 performingIdleAnim = true;
                 animator.Play("Dance");
+                storeSpeed = GetComponent<NavMeshAgent>().speed;
                 GetComponent<NavMeshAgent>().speed = 0;
             }
             if (animator.GetBool("Alive")) {
@@ -60,6 +62,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             GetComponent<NavMeshAgent>().speed = 1;
             performingIdleAnim = false;
             idleTime = 0;
+            GetComponent<NavMeshAgent>().speed = storeSpeed;
         }
 
         public void SetTarget(Transform target)
