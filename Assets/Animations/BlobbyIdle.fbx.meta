@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c7ef88bbf2fc9ef4ab810863a8ddf740
-timeCreated: 1523718399
+guid: b95a8f2202c9f584181a5434660036e7
+timeCreated: 1524608104
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -82,9 +82,8 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'ChrisZ_BlobbyNewRigWalk:LeftLeg' has translation
-      animation that will be discarded.\n\t'ChrisZ_BlobbyNewRigWalk:LeftShoulder'
-      has translation animation that will be discarded.\n\t'ChrisZ_BlobbyNewRigWalk:RightShoulder'
+      improve retargeting quality.\n\t'ChrisZ_BlobbyNewRigWalk:LeftShoulder' has translation
+      animation that will be discarded.\n\t'ChrisZ_BlobbyNewRigWalk:RightShoulder'
       has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
@@ -101,7 +100,7 @@ ModelImporter:
       name: Take 001
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 96
+      lastFrame: 72
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -119,37 +118,12 @@ ModelImporter:
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: MoveSpeed
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 2
-            time: 0
-            value: 0.4997635
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          - serializedVersion: 2
-            time: 0.49999365
-            value: 0.4503952
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          - serializedVersion: 2
-            time: 0.9916687
-            value: 0.4997635
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 0
+      curves: []
       events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0.96
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -320,81 +294,81 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: BlobbyWalkCycle(Clone)
+    - name: BlobbyIdle(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:Blobby
-      parentName: BlobbyWalkCycle(Clone)
+      parentName: BlobbyIdle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:Master
-      parentName: BlobbyWalkCycle(Clone)
+      parentName: BlobbyIdle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:Spine1SpinCtrl
-      parentName: BlobbyWalkCycle(Clone)
+      parentName: BlobbyIdle(Clone)
       position: {x: -0, y: 0.053295225, z: -0.0013552468}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:WalkCycleLeftArmCtrl
-      parentName: BlobbyWalkCycle(Clone)
+      parentName: BlobbyIdle(Clone)
       position: {x: -0.028385315, y: 0.042453855, z: -0.019268379}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:WalkCycleLeftLegCtrl
-      parentName: BlobbyWalkCycle(Clone)
+      parentName: BlobbyIdle(Clone)
       position: {x: -0.010976018, y: 0.01649865, z: -0.019234443}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:WalkCycleRightArmCtrl
-      parentName: BlobbyWalkCycle(Clone)
+      parentName: BlobbyIdle(Clone)
       position: {x: 0.026345776, y: 0.043389995, z: -0.019268379}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:WalkCycleRightLegCtrl
-      parentName: BlobbyWalkCycle(Clone)
+      parentName: BlobbyIdle(Clone)
       position: {x: 0.011421226, y: 0.01649865, z: -0.019234443}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:Hips
-      parentName: BlobbyWalkCycle(Clone)
+      parentName: BlobbyIdle(Clone)
       position: {x: -0.0002438713, y: 0.025451535, z: 0.0000000050476268}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
+      rotation: {x: -0, y: -7.2759565e-10, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ChrisZ_BlobbyNewRigWalk:LeftLeg
       parentName: ChrisZ_BlobbyNewRigWalk:Hips
       position: {x: -0.010985957, y: -0.009649999, z: -0.00005631711}
-      rotation: {x: 0.49703625, y: -0.50573075, z: 0.49420282, w: 0.5029463}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+      rotation: {x: 0.49703625, y: -0.50573075, z: 0.49420285, w: 0.5029463}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1.0000006}
     - name: ChrisZ_BlobbyNewRigWalk:LeftKnee
       parentName: ChrisZ_BlobbyNewRigWalk:LeftLeg
       position: {x: 0.0005683489, y: 0.000000055678196, z: 0.006751091}
-      rotation: {x: 0.00015899539, y: 0.008729428, z: 0.00015082955, w: 0.999962}
-      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000005}
+      rotation: {x: 0.00015896559, y: 0.008729413, z: 0.00015079975, w: 0.999962}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000007}
     - name: ChrisZ_BlobbyNewRigWalk:LeftFoot
       parentName: ChrisZ_BlobbyNewRigWalk:LeftKnee
       position: {x: -0.00045766364, y: 0.00000009279691, z: 0.006692057}
-      rotation: {x: -0.49270692, y: 0.50131744, z: -0.4986791, w: 0.5071883}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+      rotation: {x: -0.4927069, y: 0.5013174, z: -0.49867907, w: 0.5071883}
+      scale: {x: 1, y: 0.9999998, z: 0.9999999}
     - name: ChrisZ_BlobbyNewRigWalk:RightLeg
       parentName: ChrisZ_BlobbyNewRigWalk:Hips
       position: {x: 0.0114736995, y: -0.0077552972, z: -0.00015424131}
       rotation: {x: 0.49614796, y: -0.50634557, z: 0.49357295, w: 0.50382257}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
     - name: ChrisZ_BlobbyNewRigWalk:RightKnee
       parentName: ChrisZ_BlobbyNewRigWalk:RightLeg
       position: {x: 0.00044874876, y: 0.00000004677816, z: 0.0065006334}
       rotation: {x: 0.0283117, y: 0.006078705, z: -0.000047922134, w: 0.99958074}
-      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000005}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000006}
     - name: ChrisZ_BlobbyNewRigWalk:RightFoot
       parentName: ChrisZ_BlobbyNewRigWalk:RightKnee
       position: {x: -0.00057042344, y: -0.00000014568349, z: 0.007122406}
       rotation: {x: -0.5072279, y: 0.48907295, z: -0.51069325, w: 0.49266607}
-      scale: {x: 0.99999994, y: 0.99999976, z: 0.9999999}
+      scale: {x: 0.99999994, y: 0.99999976, z: 1.0000001}
     - name: ChrisZ_BlobbyNewRigWalk:Spine1
       parentName: ChrisZ_BlobbyNewRigWalk:Hips
       position: {x: -0.00008728648, y: 0.014875686, z: -0.000000007077037}
@@ -408,43 +382,43 @@ ModelImporter:
     - name: ChrisZ_BlobbyNewRigWalk:LeftShoulder
       parentName: ChrisZ_BlobbyNewRigWalk:Spine2
       position: {x: -0.01663, y: -0.00114, z: 0}
-      rotation: {x: -0.0019861918, y: -0.70682716, z: -0.001986339, w: 0.7073808}
-      scale: {x: 1.0000005, y: 1.0000002, z: 1.000001}
+      rotation: {x: -0.0019861816, y: -0.70682716, z: -0.0019863287, w: 0.7073808}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.000001}
     - name: ChrisZ_BlobbyNewRigWalk:LeftElbow
       parentName: ChrisZ_BlobbyNewRigWalk:LeftShoulder
       position: {x: -0.00023657724, y: 0.0000000010404132, z: 0.015370642}
-      rotation: {x: 0.0025431283, y: -0.0003914535, z: -0, w: 0.99999666}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+      rotation: {x: 0.0025431274, y: -0.0003914535, z: -3.49246e-10, w: 0.99999666}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
     - name: ChrisZ_BlobbyNewRigWalk:LeftForeArm
       parentName: ChrisZ_BlobbyNewRigWalk:LeftElbow
       position: {x: 0.00035588982, y: -8.5662577e-10, z: 0.01013273}
-      rotation: {x: 0.010227735, y: 0.012071688, z: -0.000118264405, w: 0.99987483}
-      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000004}
+      rotation: {x: 0.010227739, y: 0.012071688, z: -0.00011826462, w: 0.99987483}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000005}
     - name: ChrisZ_BlobbyNewRigWalk:LeftHand
       parentName: ChrisZ_BlobbyNewRigWalk:LeftForeArm
       position: {x: 5.6943275e-18, y: -2.0775528e-18, z: 0.008938411}
-      rotation: {x: -0.007129151, y: 0.6984842, z: -0.006959062, w: 0.71555614}
-      scale: {x: 0.99999994, y: 1.0000002, z: 0.9999997}
+      rotation: {x: -0.0071291286, y: 0.6984842, z: -0.0069590374, w: 0.71555614}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
     - name: ChrisZ_BlobbyNewRigWalk:RightShoulder
       parentName: ChrisZ_BlobbyNewRigWalk:Spine2
       position: {x: 0.016040012, y: -0.00017448222, z: 0.00013094963}
-      rotation: {x: 0.70647395, y: 0.010849817, z: 0.707573, w: -0.010832963}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+      rotation: {x: 0.70647395, y: 0.010849801, z: 0.707573, w: -0.010832947}
+      scale: {x: 1.0000006, y: 1.0000011, z: 1.0000006}
     - name: ChrisZ_BlobbyNewRigWalk:RightElbow
       parentName: ChrisZ_BlobbyNewRigWalk:RightShoulder
       position: {x: -0.00050878996, y: 0, z: 0.014081152}
-      rotation: {x: -0.0068715294, y: -0.0007770841, z: 0.000018492807, w: 0.9999761}
-      scale: {x: 0.9999998, y: 0.99999964, z: 0.9999998}
+      rotation: {x: -0.0068714963, y: -0.00077696494, z: 0.000018492341, w: 0.9999761}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000002}
     - name: ChrisZ_BlobbyNewRigWalk:RightForeArm
       parentName: ChrisZ_BlobbyNewRigWalk:RightElbow
       position: {x: 0.0005237153, y: -1.5120913e-15, z: 0.009008156}
-      rotation: {x: 0.0023411433, y: -0.0029151076, z: 0.00005616412, w: 0.999993}
-      scale: {x: 1.0000007, y: 1.0000013, z: 1.0000005}
+      rotation: {x: 0.0023411922, y: -0.0029153163, z: 0.00005616442, w: 0.999993}
+      scale: {x: 1.0000001, y: 1.0000013, z: 1.0000001}
     - name: ChrisZ_BlobbyNewRigWalk:RightHand
       parentName: ChrisZ_BlobbyNewRigWalk:RightForeArm
       position: {x: -2.0330715e-17, y: -3.0292462e-17, z: 0.008932943}
-      rotation: {x: -0.7091242, y: -0.007615874, z: -0.70500094, w: -0.007660417}
-      scale: {x: 1.0000002, y: 1.0000002, z: 0.99999994}
+      rotation: {x: -0.70912427, y: -0.0076158904, z: -0.7050009, w: -0.0076604327}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000001}
     - name: ChrisZ_BlobbyNewRigWalk:Neck
       parentName: ChrisZ_BlobbyNewRigWalk:Spine2
       position: {x: -0.000036146597, y: 0.014409519, z: -0.0000000036393901}

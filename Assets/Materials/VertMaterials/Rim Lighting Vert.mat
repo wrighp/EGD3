@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Rim Lighting Vert
-  m_Shader: {fileID: 4800000, guid: f3abfe1db6c017042bd29d29c83e43e3, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8be9cce8786751c4a80e94d113630072, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -82,4 +82,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
     - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.6}
-    - _SColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
+    - _SColor: {r: 0, g: 0, b: 0, a: 1}

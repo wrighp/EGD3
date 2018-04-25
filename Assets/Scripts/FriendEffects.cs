@@ -16,8 +16,8 @@ public class FriendEffects : MonoBehaviour {
     void Start () {
         postProcessingProfile = Camera.main.GetComponent<PostProcessingBehaviour>().profile;
         uiMaskBack = GameObject.Find("HeartUI").GetComponent<RectTransform>();
-        musicPlayers = GameObject.Find("MusicPlayer").GetComponents<AudioSource>();
-
+        musicPlayers = GameObject.Find("Player/MusicPlayer").GetComponents<AudioSource>();
+        print("MusicPlayer: " + musicPlayers.Length);
     }
 	
 	// Update is called once per frame
