@@ -57,7 +57,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         }
 
         public void StopDance() {
-            GetComponent<NavMeshAgent>().speed = 1;
+            GetComponent<NavMeshAgent>().speed = .55f;
             performingIdleAnim = false;
             idleTime = 0;
         }

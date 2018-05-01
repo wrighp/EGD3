@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b16f2d3c0507547b8c015725485a42, type: 3}
   m_Name: Orange
   m_EditorClassIdentifier: 
-  tags: 05000000
+  tags: 03000000
   friendRequirements: []
